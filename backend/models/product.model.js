@@ -16,8 +16,8 @@ const productSchema = new mongoose.Schema({
         required: true,
     },
 }, {
-    timestamps: true,
+    timestamps: true, // automatically create fields for when the product was created and updated
 });
 
-const Product = mongoose.model("Product", productSchema);
-export default Product;
+const Product = mongoose.model("Product", productSchema); // Create a model from the schema
+export default Product; 
